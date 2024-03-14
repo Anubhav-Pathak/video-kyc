@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Online Video KYC 
 
-## Getting Started
+Welcome to our Online KYC platform! We've revolutionized the KYC journey to be seamlessly **conversational** and incredibly **user-friendly**. Gone are the days of cumbersome forms and tedious uploads. With our innovative platform, completing KYC verification is as effortless as engaging in a friendly conversation. Say hello to a new era of hassle-free identity verification!
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dual Pipeline Architecture:** Ensures high scalability and easy integration of new features
+- **Live Image Capture & Recognition:** Streamlines verification with real-time document capture and information extraction.
+- **Gemini LLM Integration:** Leverages advanced natural language processing for a conversational experience.
+- **Language Accessibility:** Choose from a variety of languages to ensure a comfortable experience for all users.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Architecture 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The KYC system uses a web interface for user interaction. Identification documents are processed through pipelines, feeding data to an LLM application for verification. Verified information is securely stored in the KYC database, streamlining the process with efficient verification mechanisms.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Architecture](/posts/path/to/img.jpg "Optional title")
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Workflow
+
+The depicted speech recognition system follows a structured flow: Initially, the user's spoken input undergoes conversion into text by the system. Subsequently, the text undergoes preprocessing, where pertinent features are extracted. This processed data is then channeled into an LLM function, presumably a Large Language Model application, for further analysis. Finally, the outcomes are presented in a chat interface, completing the technological pipeline for speech recognition and interaction.
+
+![Workflow]()
+
+
+## Tech Stack
+
+- **Next.js**
+   - Purpose: Dual pipeline architecture.
+  
+- **Tailwind CSS**
+  
+  - Purpose: UI design and styling.
+  
+- **Langchain**
+   - Purpose: Integration of Gemini Large Language Model (LLM).
+
+- **Postgre SQL**
+   - Purpose: Database Management.
+
+- **Easy Speech npm**
+   - Purpose: Text to Speech and Speech to Text conversion.
+
+## Tutorial
+
+Step 1: Give you personal details like Name, address, dob.\
+Step 2: Show you aadhar card and click on capture to get the aadhar number.\
+Step 3:
+## Demo
+
+Demo video: https://github.com/Anubhav-Pathak/video-kyc.git
