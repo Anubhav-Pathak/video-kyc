@@ -50,7 +50,7 @@ The depicted speech recognition system follows a structured flow: Initially, the
 ## Tutorial
 
 Step 1: Give you personal details like Name, address, dob.\
-Step 2: Show you aadhar card and click on capture to get the aadhar number.\
+Step 2: Show you aadhaar card and click on capture to get the aadhar number.\
 Step 3:
 ## Demo
 
