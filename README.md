@@ -2,6 +2,9 @@
 
 Welcome to our Online KYC platform! We've revolutionized the KYC journey to be seamlessly **conversational** and incredibly **user-friendly**. Gone are the days of cumbersome forms and tedious uploads. With our innovative platform, completing KYC verification is as effortless as engaging in a friendly conversation. Say hello to a new era of hassle-free identity verification!
 
+![WhatsApp Image 2024-03-14 at 17 18 13_1a624951](https://github.com/Anubhav-Pathak/video-kyc/assets/94227812/0609a15d-40d4-41d0-92f2-29511256b1cd)
+
+
 ## Features
 
 - **Dual Pipeline Architecture:** Ensures high scalability and easy integration of new features
@@ -49,9 +52,13 @@ The depicted speech recognition system follows a structured flow: Initially, the
 
 ## Tutorial
 
+
 Step 1: Give you personal details like Name, address, dob.\
-Step 2: Show you aadhaar card and click on capture to get the aadhar number.\
-Step 3:
+Step 2: Show your aadhaar card/PAN card and click on capture to get the aadhar number/pan number.\
+Step 3: Click a photo of yourself to capture your image.\
+Step 4: Show your signature and click on capture to get the signature.\
+Step 5: Completed sucessfully!
+
 ## Demo
 
-Demo video: https://github.com/Anubhav-Pathak/video-kyc.git
+Demo video: 
