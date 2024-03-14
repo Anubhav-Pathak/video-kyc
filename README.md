@@ -26,7 +26,7 @@ The KYC system uses a web interface for user interaction. Identification documen
 
 The depicted speech recognition system follows a structured flow: Initially, the user's spoken input undergoes conversion into text by the system. Subsequently, the text undergoes preprocessing, where pertinent features are extracted. This processed data is then channeled into an LLM function, presumably a Large Language Model application, for further analysis. Finally, the outcomes are presented in a chat interface, completing the technological pipeline for speech recognition and interaction.
 
-![Workflow]()
+![WhatsApp Image 2024-03-14 at 15 59 12_eef8728f](https://github.com/Anubhav-Pathak/video-kyc/assets/104270797/2406ab2c-2443-40c8-838f-8ff7d7def1cd)
 
 
 ## Tech Stack
