@@ -2,6 +2,12 @@
 
 Welcome to our Online KYC platform! We've revolutionized the KYC journey to be seamlessly **conversational** and incredibly **user-friendly**. Gone are the days of cumbersome forms and tedious uploads. With our innovative platform, completing KYC verification is as effortless as engaging in a friendly conversation. Say hello to a new era of hassle-free identity verification!
 
+![WhatsApp Image 2024-03-14 at 17 18 13_1a624951](https://github.com/Anubhav-Pathak/video-kyc/assets/94227812/0609a15d-40d4-41d0-92f2-29511256b1cd)
+
+# Demo
+
+Demo video: https://www.youtube.com/watch?v=PECWBEpAdfo
+
 ## Features
 
 - **Dual Pipeline Architecture:** Ensures high scalability and easy integration of new features
@@ -17,7 +23,7 @@ Welcome to our Online KYC platform! We've revolutionized the KYC journey to be s
 
 The KYC system uses a web interface for user interaction. Identification documents are processed through pipelines, feeding data to an LLM application for verification. Verified information is securely stored in the KYC database, streamlining the process with efficient verification mechanisms.
 
-![Architecture](/posts/path/to/img.jpg "Optional title")
+![WhatsApp Image 2024-03-14 at 17 36 23_92b890b3](https://github.com/Anubhav-Pathak/video-kyc/assets/104270797/ff598f77-d6f0-43e7-a73d-0f5c8d08394f)
 
 
 
@@ -49,9 +55,13 @@ The depicted speech recognition system follows a structured flow: Initially, the
 
 ## Tutorial
 
-Step 1: Give you personal details like Name, address, dob.\
-Step 2: Show you aadhaar card and click on capture to get the aadhar number.\
-Step 3:
-## Demo
 
-Demo video: https://github.com/Anubhav-Pathak/video-kyc.git
+Step 1: Give you personal details like Name, address, dob.\
+Step 2: Show your aadhaar card/PAN card and click on capture to get the aadhar number/pan number.\
+Step 3: Click a photo of yourself to capture your image.\
+Step 4: Show your signature and click on capture to get the signature.\
+Step 5: Completed sucessfully!
+![WhatsApp Image 2024-03-14 at 17 18 13_25ba87d3](https://github.com/Anubhav-Pathak/video-kyc/assets/91133940/3418707c-cf1d-4f00-8640-4a9bf0aa720c)
+
+
+
