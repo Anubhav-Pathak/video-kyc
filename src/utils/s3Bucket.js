@@ -1,12 +1,12 @@
 import AWS from 'aws-sdk';
 
 AWS.config.update({
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.AWS_SECRET_KEY
+    accessKeyId: process.env.MY_ACCESS_KEY,
+    secretAccessKey: process.env.MY_SECRET_KEY
 });
 
 const s3 = new AWS.S3({});
-const bucketName = process.env.BUCKET_NAME;
+const bucketName = process.env.MY_BUCKET_NAME;
 
 export const uploadFile = async (folder, fileName, file) => {
     const params = {
