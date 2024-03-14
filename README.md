@@ -58,7 +58,9 @@ Step 2: Show your aadhaar card/PAN card and click on capture to get the aadhar n
 Step 3: Click a photo of yourself to capture your image.\
 Step 4: Show your signature and click on capture to get the signature.\
 Step 5: Completed sucessfully!
+![WhatsApp Image 2024-03-14 at 17 18 13_25ba87d3](https://github.com/Anubhav-Pathak/video-kyc/assets/91133940/3418707c-cf1d-4f00-8640-4a9bf0aa720c)
+
 
 ## Demo
 
-Demo video: 
+Demo video: https://www.youtube.com/watch?v=PECWBEpAdfo
