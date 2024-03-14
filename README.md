@@ -20,7 +20,7 @@ Welcome to our Online KYC platform! We've revolutionized the KYC journey to be s
 
 The KYC system uses a web interface for user interaction. Identification documents are processed through pipelines, feeding data to an LLM application for verification. Verified information is securely stored in the KYC database, streamlining the process with efficient verification mechanisms.
 
-![Architecture](/posts/path/to/img.jpg "Optional title")
+![WhatsApp Image 2024-03-14 at 17 36 23_92b890b3](https://github.com/Anubhav-Pathak/video-kyc/assets/104270797/ff598f77-d6f0-43e7-a73d-0f5c8d08394f)
 
 
 
