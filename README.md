@@ -4,6 +4,9 @@ Welcome to our Online KYC platform! We've revolutionized the KYC journey to be s
 
 ![WhatsApp Image 2024-03-14 at 17 18 13_1a624951](https://github.com/Anubhav-Pathak/video-kyc/assets/94227812/0609a15d-40d4-41d0-92f2-29511256b1cd)
 
+# Demo
+
+Demo video: https://www.youtube.com/watch?v=PECWBEpAdfo
 
 ## Features
 
@@ -61,6 +64,4 @@ Step 5: Completed sucessfully!
 ![WhatsApp Image 2024-03-14 at 17 18 13_25ba87d3](https://github.com/Anubhav-Pathak/video-kyc/assets/91133940/3418707c-cf1d-4f00-8640-4a9bf0aa720c)
 
 
-## Demo
 
-Demo video: https://www.youtube.com/watch?v=PECWBEpAdfo
