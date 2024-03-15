@@ -17,8 +17,8 @@ const WebCamActions = () => {
 
     const listenPipeline = async() => {
         const answer = await Listen(preference.lang)
-        // const modified_answer = await TexttoText(prompt, answer);
-        // console.log(modified_answer);
+        const modified_answer = await TexttoText(prompt, answer);
+        console.log(modified_answer);
         await addMessage({text: answer, type: 'end'});
         await setIndex(index + 1);
     }
