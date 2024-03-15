@@ -16,6 +16,8 @@ import Toast from '@/components/ui/Toast';
 import Steps from '@/components/ui/Steps';
 import Navbar from '@/components/Navbar';
 import Controls from '@/components/Controls';
+import Modal from '@/components/ui/Modal';
+import Form from '@/components/Form';
 
 const {questions} = data;
 
@@ -69,6 +71,8 @@ const Page = () => {
                 </div>
             </div>
         </div>
+        <button className="btn btn-primary absolute bottom-4 right-4" onClick={()=>document.getElementById('form-modal').showModal()}>Open Form</button>
+        <Modal id="form-modal"> <Form /> </Modal>
         <Toast />
     </div>
   )
