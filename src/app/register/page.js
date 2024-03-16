@@ -5,43 +5,43 @@ import React, { useEffect } from 'react'
 import Chat from '@/components/Chat'
 import WebCam from '@/components/WebCam'
 import usePipelineStore from '@/store/PipelineStore';
-import useChatStore from '@/store/ChatStore';
 import useUserStore from '@/store/UserStore';
 import useLoadingStore from '@/store/LoadingStore';
 import useToastStore from '@/store/ToastStore';
 
 import data from "@/data.json";
-import { Ask, Listen } from '@/utils/pipeline.mjs';
+import { Ask } from '@/utils/pipeline.mjs';
 import Toast from '@/components/ui/Toast';
 import Steps from '@/components/ui/Steps';
 import Navbar from '@/components/Navbar';
 import Controls from '@/components/Controls';
 import Modal from '@/components/ui/Modal';
 import Form from '@/components/Form';
+import useDataStore from '@/store/DataStore';
 
 const {questions} = data;
 
 const Page = () => {
-    const {index, setQuestion, setPrompt} = usePipelineStore();
+    const {index, question, setQuestion, setPrompt, setType} = usePipelineStore();
+    const {data} = useDataStore();
     const addToast = useToastStore((state) => state.addToast);
     const preference = useUserStore(state => state.preference);
     const {setLoadingState} = useLoadingStore();
 
-    console.log(index);
-
     const clickHandler = async () => {
         const response = await fetch(`/api/ask?index=${index}`);
         if(!response.ok) return addToast({message: "Error fetching question", type: "error"});
-        const {message} = await response.json();
-        askPipeline(message);
-        await setLoadingState("user-prompt", true)
+        const {message, type, prompt} = await response.json();
+        askPipeline(message, type, prompt);
     }
 
-    const askPipeline = async (question) => {
+    const askPipeline = async (message, type, prompt) => {
         try{
-            await setQuestion(question);
-            await setPrompt(prompt);
-            await Ask(question, preference.lang);
+            await setQuestion(message)
+            await setType(type)
+            await setPrompt(prompt)
+            await Ask(message, preference.lang);
+            await setLoadingState("user-prompt", true)
         } catch (error){ 
             console.log(error);
         }

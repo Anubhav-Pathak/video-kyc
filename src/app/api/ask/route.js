@@ -7,7 +7,7 @@ export const GET = async (req) => {
     const query = new URLSearchParams(url.search);
     const index = query.get('index');
     try{
-        return NextResponse.json({message: questions[index].question, prompt: questions[index].prompt ?? ""}, {status: 200});
+        return NextResponse.json({type: questions[index].type ,message: questions[index].question, prompt: questions[index].prompt ?? ""}, {status: 200});
     } catch (error){
         console.log(error);
         return NextResponse.json({error}, {status: 500});

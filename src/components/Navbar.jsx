@@ -15,7 +15,6 @@ const Navbar = () => {
                 <option value={"hn-IN"}>Hindi</option>
                 <option disabled>Bangla</option>
             </select>
-
         </div>
     </div>
   )

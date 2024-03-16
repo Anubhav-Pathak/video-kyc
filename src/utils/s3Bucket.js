@@ -41,3 +41,19 @@ export const deleteFile = async (fileName) => {
         });
     });
 };
+
+export const getFile = async (fileName) => {
+    const params = {
+        Bucket: bucketName,
+        Key: fileName,
+    };
+    return new Promise((resolve, reject) => {
+        s3.getObject(params, function (err, data) {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(data);
+            }
+        });
+    });
+};

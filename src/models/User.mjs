@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const User = mongoose.Schema({
     name: String,
-    dob: Date,
+    dob: String,
     address: String,
     income: Number,
     employment: String,

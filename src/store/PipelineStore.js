@@ -1,13 +1,17 @@
 import {create} from "zustand";
 
 const usePipelineStore = create((set) => ({
-    question: {type:'', question: '', prompt: '', index:0},
+    index: 0,
+    question: '',
+    type: '',
+    prompt: '',
     data: {name: '', dob: '', address: '', income: '', employment: '', aadhar: '', pan: '', profile: '', signature: '', status: 'pending'},
-    setQuestion: (key, isLoading) => set((state) => ({
-      loadingStates: { ...state.loadingStates, [key]: isLoading, },
-    })),
-    setData: (key, isLoading) => set((state) => ({
-      loadingStates: { ...state.loadingStates, [key]: isLoading, },
+    setIndex: (index) => set({index}),
+    setQuestion: (question) => set({question}),
+    setType: (type) => set({type}),
+    setPrompt: (prompt) => set({prompt}),
+    setData: (key, value) => set((state) => ({
+      data: { ...state.data, [key]: value, },
     })),
 }));
 

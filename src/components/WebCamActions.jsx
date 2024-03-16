@@ -7,23 +7,23 @@ import useChatStore from '@/store/ChatStore';
 import usePipelineStore from '@/store/PipelineStore';
 
 import { TexttoText } from '@/utils/pipeline.mjs';
+import useDataStore from '@/store/DataStore';
 
 const WebCamActions = () => {
 
     const {preference, changePreference} = useUserStore();
-    const {question, data} = usePipelineStore();
+    const {question, prompt, type, index, setIndex} = usePipelineStore();
+    const {data, setData} = useDataStore();
     const addMessage = useChatStore(state => state.addMessage);
     const {loadingStates, setLoadingState } = useLoadingStore();
 
     const listenPipeline = async() => {
         const answer = await Listen(preference.lang)
-        const modified_answer = await TexttoText(question.prompt, answer);
-        console.log(modified_answer);
-        await setData({...data, [`${question.type}`]: modified_answer});
+        const modified_answer = await TexttoText(prompt, answer);
+        await setData(type, modified_answer);
         await addMessage({text: answer, type: 'end'});
         await setLoadingState('user-prompt', false);
-        await changePreference({...preference, audio: !preference.audio})
-        await setIndex(question.index + 1);
+        await setIndex(index + 1);
     }
 
     const clickHandler = async () => {

@@ -9,11 +9,11 @@ import usePipelineStore from '@/store/PipelineStore';
 
 const Chat = () => {
 
-const {messages, addMessage} = useChatStore();
-  const question = usePipelineStore(state => state.question);
+  const {messages, addMessage} = useChatStore();
+  const {question} = usePipelineStore();
 
   useEffect(() => {
-    if (question) {
+    if (question !== '') {
       addMessage({text: question, type: 'start'});
     }
   }, [question, addMessage])

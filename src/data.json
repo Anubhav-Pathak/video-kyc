@@ -1,34 +1,42 @@
 {
     "questions": [
       {
+        "type": "name",
         "question": "What is your full name?",
         "prompt": "Identify and return only the name from the sentence"
       },
       {
+        "type": "dob",
         "question": "What is your date of birth?",
         "prompt": "Please change only the date of birth in DD-MM-YYYY format."
       },
       {
+        "type": "address",
         "question": "What is your current residential address?",
         "prompt": "Extract only the residential address and remove any extra text"
       },
       {
+        "type": "aadhar",
         "question": "Provide your Aadhar Card Number, use the Image Capture button to submit it",
         "prompt": "Extract only Aadhar Number from the image"
       },
       {
+        "type": "income",
         "question": "What is your estimated income range?",
         "prompt": "Extract only the estimated income range and remove any extra text"
       },
       {
+        "type": "employment",
         "question": "What type of employment are you engaged in?",
         "prompt": "Extract only the type of employment remove any extra text"
       },
       {
+        "type": "profile",
         "question": "Add your profile image, use the Image Capture button to submit it",
         "prompt": ""
       },
       {
+        "type": "signature",
         "question": "Provide your signature, use the Image Capture button to submit it",
         "prompt": ""
       }
